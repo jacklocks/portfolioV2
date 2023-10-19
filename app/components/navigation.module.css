@@ -1,0 +1,11 @@
+.nav {
+  color: #b7ab98;
+  text-transform: uppercase;
+  margin: 20px;
+  list-style-type: none;
+}
+.link {
+  margin: 20px;
+  font-weight: 900;
+  font-size: 1.4rem;
+}

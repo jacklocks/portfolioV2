@@ -1,0 +1,39 @@
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  position: relative;
+}
+.titleEnd {
+    display: flex;
+}
+.name {
+  color: #b7ab98;
+ 
+}
+.title1 {
+  color: #b7ab98;
+  font-size: 8rem;
+  margin: 20px;
+  
+}
+.title2 {
+    color: #EB5939;
+    font-size: 8rem;
+    margin: 20px;
+    
+}
+.socialLink {
+  color: #b7ab98;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  left: 0;
+  margin: 0 0 47px 30px;
+  font-size: 40px;
+  height: 150px;
+  justify-content: space-between;
+}
