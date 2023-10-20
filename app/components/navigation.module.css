@@ -1,5 +1,5 @@
 .nav {
-  color: #b7ab98;
+  color: var(--primary);
   text-transform: uppercase;
   margin: 20px;
   list-style-type: none;

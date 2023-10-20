@@ -1,0 +1,38 @@
+.aboutContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.aboutContainer h2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--primary);
+  font-size: 1.4rem;
+  margin-left: 30px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+.aboutContainer p {
+    color: var(--primary);
+    font-size: 6rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+.aboutContainer span {
+    color: var(--secondary);
+}
+.aboutContainer ul {
+    width: 100%;
+    list-style-type: none;
+    font-size: 60px;
+    color: var(--secondary);
+    display: flex;
+    justify-content: space-around;
+}

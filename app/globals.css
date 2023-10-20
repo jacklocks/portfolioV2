@@ -1,3 +1,8 @@
+:root {
+  --primary: #B7AB98;
+  --secondary:#EB5939;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
