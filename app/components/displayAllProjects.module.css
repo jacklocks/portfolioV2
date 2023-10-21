@@ -1,0 +1,58 @@
+.projectContainer {
+  color: var(--primary);
+  height: auto;
+  position: relative;
+  transition: transform 0.5s, opacity 0.5s;
+  z-index: 1;
+}
+
+.displayTitleContainer {
+  background: black;
+  height: 150px;
+  border-top: 1px solid var(--primary);
+  border-bottom: 1px solid var(--primary);
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.displayTitleContainer h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+
+.overlay {
+  background: var(--secondary);
+  color: black;
+  display: flex;
+  height: 150px;
+  cursor: pointer;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  opacity: 0;
+  transform: scaleY(0);
+  transition: transform 0.5s, opacity 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.projectTitle {
+  color: black;
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+.projectShortDescription {
+  color: black;
+  font-size: 2rem;
+}
+
+.projectContainer:hover .overlay {
+  opacity: 1;
+  transform: scaleY(1);
+}

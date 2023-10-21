@@ -3,9 +3,15 @@
   text-transform: uppercase;
   margin: 20px;
   list-style-type: none;
+  height: 150px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .link {
-  margin: 20px;
   font-weight: 900;
   font-size: 1.4rem;
+  text-decoration: none;
+  color: var(--primary);
 }
+

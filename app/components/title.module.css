@@ -8,33 +8,32 @@
   height: 80vh;
 }
 .titleEnd {
-    display: flex;
+  display: flex;
 }
 .name {
   color: var(--primary);
- 
 }
 .title1 {
   color: var(--primary);
   font-size: 8rem;
   margin: 20px;
-  
 }
 .title2 {
-    color: var(--secondary);
-    font-size: 8rem;
-    margin: 20px;
-    
+  color: var(--secondary);
+  font-size: 8rem;
+  margin: 20px;
+}
+.socialLinkContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 150px;
+  margin: 0 0 120px 30px;
 }
 .socialLink {
   color: var(--primary);
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  bottom: 0;
-  left: 0;
-  margin: 0 0 130px 30px;
   font-size: 40px;
-  height: 150px;
-  justify-content: space-between;
 }

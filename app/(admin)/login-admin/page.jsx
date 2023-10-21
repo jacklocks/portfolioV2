@@ -1,11 +1,13 @@
 "use client";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { AdminContext } from "@/app/context/adminContext";
 
 const LoginAdmin = () => {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const router = useRouter();
+  const { setIsAdmin } = useContext(AdminContext);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -13,6 +15,7 @@ const LoginAdmin = () => {
       name === process.env.NEXT_PUBLIC_NAME &&
       password === process.env.NEXT_PUBLIC_PASSWORD
     ) {
+      setIsAdmin(true);
       alert("admin connect");
       setName("");
       setPassword("");

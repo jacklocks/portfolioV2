@@ -1,8 +1,9 @@
-.aboutContainer {
+.contactContainer {
   height: 100vh;
   margin-bottom: 20px;
 }
-.aboutContainer h2 {
+
+.contactContainer h2 {
   color: var(--primary);
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -12,24 +13,23 @@
   display: flex;
   align-items: center;
 }
-.aboutContainer p {
+.contactContent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactContainer p {
   color: var(--primary);
-  font-size: 6rem;
+  font-size: 1.6rem;
   font-weight: 700;
   text-align: center;
   padding: 0 20px 0 20px;
-  
+  width: 50%;
+  line-height: 50px;
+  border: 2px solid var(--primary);
+  padding: 20px;
 }
-.aboutContainer span {
+.contactContainer p a {
   color: var(--secondary);
-}
-.aboutContainer ul {
-  width: 100%;
-  list-style-type: none;
-  font-size: 60px;
-  color: var(--secondary);
-  display: flex;
-  justify-content: space-around;
-  height: 200px;
-  align-items: center;
 }

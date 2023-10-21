@@ -1,7 +1,7 @@
 import mongoose, { Schema } from "mongoose";
 
-
-const projectSchema = new Schema({
+const projectSchema = new Schema(
+  {
     title: String,
     date: String,
     shortDescription: String,
@@ -10,8 +10,11 @@ const projectSchema = new Schema({
     siteWeb: String,
     technos: String,
     image: String,
-}, { timestamps: true })
+  },
+  { timestamps: true }
+);
 
-const Projects = mongoose.models.Projects || mongoose.model("project", projectSchema)
+const Projects =
+  mongoose.models.Projects || mongoose.model("Projects", projectSchema);
 
 export default Projects;

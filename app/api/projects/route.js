@@ -24,15 +24,18 @@ export async function POST(request) {
     technos: technos,
     image: image,
   });
-  return NextResponse.json({ message:"project created successfully" }, { status: 201 })
+  return NextResponse.json(
+    { message: "project created successfully" },
+    { status: 201 }
+  );
 }
 
 export async function GET() {
-    try {
-        await connectToMongoDB();
-        const projects = await Projects.find()
-        return NextResponse.json(projects)
-    } catch (error) {
-        console.log(error)
-    }
+  try {
+    await connectToMongoDB();
+    const projectsArray = await Projects.find({});
+    return NextResponse.json(projectsArray);
+  } catch (error) {
+    console.log(error);
+  }
 }
