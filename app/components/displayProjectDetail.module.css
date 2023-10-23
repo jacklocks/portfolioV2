@@ -1,0 +1,64 @@
+.displayProjectDetailContainer {
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--primary);
+  margin: 30px;
+  margin-bottom: 150px;
+}
+.linkSiteWeb {
+  color: var(--secondary);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  padding: 20px;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title h1 {
+  color: var(--primary);
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.title p {
+  color: var(--primary);
+  font-size: 1.5rem;
+}
+.descriptionContainer {
+  font-size: 1.4rem;
+  color: var(--primary);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 600px;
+  font-weight: 600;
+  line-height: 40px;
+}
+.imgContainer {
+  width: 90%;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.imgContainer img {
+  width: 900px;
+  height: auto;
+  border: 2px solid var(--primary);
+}
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  justify-content: space-around;
+  height: 300px;
+}
+.logo>* {
+    flex: 1 1  90px;
+}

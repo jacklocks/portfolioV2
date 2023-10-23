@@ -19,7 +19,7 @@ const AllProjects = () => {
   useEffect(() => {
     fetchProjects();
   }, []);
-  console.log(projects);
+  // console.log(projects);
 
   if (projects.length === 0) return <div>no projects found</div>;
 

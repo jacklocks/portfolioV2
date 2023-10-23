@@ -1,0 +1,33 @@
+.footerSection {
+  position: relative;
+}
+.footer {
+  background: var(--primary);
+  margin-top: 20px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.footerContainer {
+  height: 60px;
+  color: white;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-around;
+}
+.copyrightContainer {
+  display: flex;
+  margin: 20px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.iconCopyright {
+  margin: 1px 5px 0 0;
+}
+.textFooter {
+  margin: 20px;
+  color: black;
+  font-weight: 700;
+  text-transform: uppercase;
+}

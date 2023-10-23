@@ -2,6 +2,7 @@ import { Raleway } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import { AdminContextProvider } from "./context/adminContext";
+import Footer from "./components/Footer";
 
 const raleway = Raleway({
   weight: "variable",
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
         <AdminContextProvider>
           <Header />
           {children}
+          <Footer />
         </AdminContextProvider>
       </body>
     </html>

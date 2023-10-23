@@ -2,6 +2,7 @@
 import { useRouter } from "next/navigation";
 import { useState, useContext } from "react";
 import { AdminContext } from "@/app/context/adminContext";
+import styles from "./page.module.css"
 
 const LoginAdmin = () => {
   const [name, setName] = useState("");
@@ -28,7 +29,9 @@ const LoginAdmin = () => {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
+    <div className={styles.formAdminContainer}>
+      <h1>Admin</h1>
+      <form className={styles.formAdmin} onSubmit={handleSubmit}>
         <label htmlFor="name">name</label>
         <input
           onChange={(e) => setName(e.target.value)}
@@ -36,6 +39,7 @@ const LoginAdmin = () => {
           name=""
           id="name"
           placeholder="enter name"
+          required
         />
         <label htmlFor="password">password</label>
         <input
@@ -44,9 +48,11 @@ const LoginAdmin = () => {
           name=""
           id="password"
           placeholder="enter password"
+          required
         />
         <button type="submit">connect</button>
       </form>
+      </div>
     </>
   );
 };
