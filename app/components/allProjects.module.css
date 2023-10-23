@@ -12,3 +12,11 @@
   display: flex;
   align-items: center;
 }
+.loading {
+  color: var(--secondary);
+  font-size: 2rem;
+}
+.noProjects {
+  color: var(--secondary);
+  font-size: 2rem;
+}
