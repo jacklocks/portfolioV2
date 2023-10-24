@@ -34,6 +34,7 @@ export default function RootLayout({ children }) {
       <Head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
+        <link rel="icon" href={metadata.favicon} />
         <meta name="keywords" content={metadata.keywords} />
         <meta name="author" content={metadata.author} />
         <meta property="og:title" content={metadata.ogTitle} />
@@ -50,17 +51,17 @@ export default function RootLayout({ children }) {
         <meta property="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:url"
-          content="https://alexandre-hontcharouk-portfolio.vercel.app/"
+          content="https://portfolio-eric-castets.vercel.app/"
         />
         <meta
           property="twitter:title"
-          content="Alexandre Hontcharouk - Développeur Web Freelance à Lyon"
+          content="Porfolio Éric Castets Développeur Web Freelance"
         />
         <meta
           property="twitter:description"
-          content="Découvrez le portfolio d'Alexandre Hontcharouk, développeur web front-end à Lyon, Villeurbanne. Spécialisé en JavaScript, HTML, CSS, Sass, React.js et Next.js."
+          content="Porfolio Éric Castets Développeur Web Freelance spécialisé en Javascript, HTML, CSS, Sass, React.js, Next.js"
         />
-        <meta property="twitter:image" content="./opengraph-image.png" />
+        <meta property="twitter:image" content="../opengraph-image.png" />
       </Head>
       <body className={`${raleway.variable}`}>
         <AdminContextProvider>
