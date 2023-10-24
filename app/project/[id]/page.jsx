@@ -8,7 +8,7 @@ const ProjectPage = async ({ params }) => {
 
   return (
     <>
-      {/* <DisplayProjectDetail project={project} />; */}
+      <DisplayProjectDetail project={project} />;
     </>
   );
 };

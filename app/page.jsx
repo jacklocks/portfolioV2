@@ -11,7 +11,7 @@ export default function Home() {
       <Mouse />
       <Title />
       <About />
-      {/* <AllProjects /> */}
+      <AllProjects />
       <Contact />
     </>
   );
