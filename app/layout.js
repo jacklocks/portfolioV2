@@ -29,7 +29,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="fr" className={`${vcr.variable} ${titi.variable}`}>
+    <html lang="fr">
       <Head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
