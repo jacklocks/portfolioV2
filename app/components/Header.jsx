@@ -2,7 +2,7 @@ import React from "react";
 import logo from "./Logo";
 import Navigation from "./Navigation";
 import Logo from "./Logo";
-import styles from "./header.module.css"
+import styles from "../styles/header.module.css"
 
 const Header = () => {
   return (

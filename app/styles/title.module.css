@@ -7,12 +7,15 @@
   position: relative;
   height: 80vh;
 }
+
 .titleEnd {
   display: flex;
 }
+
 .name {
   color: var(--primary);
 }
+
 .title1 {
   color: var(--primary);
   font-size: 8rem;

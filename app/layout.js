@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "./components/Header";
 import { AdminContextProvider } from "./context/adminContext";
 import Footer from "./components/Footer";
+// import Mouse from "./components/Mouse";
 
 const raleway = Raleway({
   weight: "variable",
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${raleway.variable}`}>
         <AdminContextProvider>
+          {/* <Mouse /> */}
           <Header />
           {children}
           <Footer />

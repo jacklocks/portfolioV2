@@ -1,7 +1,7 @@
 "use client";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
-import styles from "./displayAllProjects.module.css";
+import styles from "../styles/displayAllProjects.module.css";
 
 const DisplayAllProjects = ({ project }) => {
   const { title, shortDescription } = project;

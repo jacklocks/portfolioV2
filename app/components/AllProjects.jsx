@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import DisplayAllProjects from "./DisplayAllProjects";
-import styles from "./allProjects.module.css";
+import styles from "../styles/allProjects.module.css";
 
 const AllProjects = () => {
   const [projects, setProjects] = useState([]);
@@ -24,7 +24,6 @@ const AllProjects = () => {
     setLoading(true);
     fetchProjects();
   }, []);
-  // console.log(projects);
 
   if (loading) return <div className={styles.loading}>loading...</div>;
 
@@ -33,16 +32,15 @@ const AllProjects = () => {
 
   if (!projects) return <div className={styles.loading}>No projects found</div>;
 
-  if (projects.length === 0)
-    return <div className={styles.noProjects}>no projects found</div>;
-
   return (
-    <div id="projets" className={styles.allProjectsContainer}>
-      <h2>projets</h2>
-      {projects.map((project) => (
-        <DisplayAllProjects key={project._id} project={project} />
-      ))}
-    </div>
+    <>
+      <div id="projets" className={styles.allProjectsContainer}>
+        <h2>projets</h2>
+        {projects.map((project) => (
+          <DisplayAllProjects key={project._id} project={project} />
+        ))}
+      </div>
+    </>
   );
 };
 

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { BiCopyright } from "react-icons/bi";
-import styles from "./footer.module.css"
+import styles from "../styles/footer.module.css"
 
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
         <div className={styles.footerContainer}>
           <div className={styles.copyrightContainer}>
             <BiCopyright className={styles.iconCopyright} /> 
-            <p>copyright</p>
+            <p>2023</p>
           </div>
           <div className={styles.textFooter}>
           <p>créé par éric castets</p>

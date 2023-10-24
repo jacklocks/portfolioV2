@@ -1,6 +1,6 @@
 :root {
-  --primary: #B7AB98;
-  --secondary:#EB5939;
+  --primary: #b7ab98;
+  --secondary: #eb5939;
 }
 
 * {
@@ -13,4 +13,18 @@ body {
   font-family: var(--raleway), sans-serif;
   background: url("./assets/img/backport.webp") no-repeat center/cover fixed;
   height: auto;
+}
+.cursor {
+  width: 20px;
+  height: 20px;
+  background: var(--secondary);
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  transition: 0.3s;
+  z-index: 99;
+}
+.hoverHead {
+  transform: scale(8);
 }

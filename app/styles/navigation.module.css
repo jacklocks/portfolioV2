@@ -4,7 +4,7 @@
   margin: 20px;
   list-style-type: none;
   height: 150px;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
@@ -14,4 +14,16 @@
   text-decoration: none;
   color: var(--primary);
 }
-
+.cursor {
+  width: 20px;
+  height: 20px;
+  background: var(--secondary);
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  transition: 0.3s;
+}
+.nav a:hover ~ .cursor {
+  transform: scale(8);
+}
