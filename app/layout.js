@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "./components/Header";
 import { AdminContextProvider } from "./context/adminContext";
 import Footer from "./components/Footer";
+import Head from "next/head";
 
 const raleway = Raleway({
   weight: "variable",
