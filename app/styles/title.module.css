@@ -40,3 +40,91 @@
   color: var(--primary);
   font-size: 40px;
 }
+@media screen and (min-width:320px) and (max-width:480px) {
+  .titleContainer {
+    margin-top: 50px;
+    height: 80vh;
+  }
+  .name {
+    font-size: 1.2rem;
+  }
+  .title1 {
+    font-size: 2.2rem;
+  }
+  .title2 {
+    font-size: 2.2rem;
+  }
+  .socialLinkContainer {
+    height: 30px;
+    margin: 0 0 120px 10px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .socialLink {
+    font-size: 25px;
+    margin: 10px;
+  }
+}
+@media screen and (min-width:481px) and (max-width:812px) {
+  .titleContainer {
+    margin-top: 150px;
+    height: 80vh;
+  }
+  .name {
+    font-size: 2rem;
+  }
+  .title1 {
+    font-size: 3rem;
+  }
+  .title2 {
+    font-size: 3rem;
+  }
+  .socialLinkContainer {
+    height: 30px;
+    margin: 0 0 120px 10px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .socialLink {
+    font-size: 30px;
+    margin: 10px;
+  }
+}
+@media screen and (min-width:813px) and (max-width:1024px) {
+  .titleContainer {
+    height: 80vh;
+  }
+  .name {
+    font-size: 3rem;
+  }
+  .title1 {
+    font-size: 5rem;
+  }
+  .title2 {
+    font-size: 5rem;
+  }
+  .socialLinkContainer {
+    height: 30px;
+    margin: 0 0 120px 10px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .socialLink {
+    font-size: 35px;
+    margin: 10px;
+  }
+}
+@media screen and (min-width: 800px) and (max-height: 800px) {
+  .titleContainer {
+    margin-top: 300px;
+  }
+}

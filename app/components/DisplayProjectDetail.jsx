@@ -42,8 +42,9 @@ const DisplayProjectDetail = ({ project }) => {
           <p>{detail4}</p>
           <p>{detail5}</p>
           <p>{detail6}</p>
+          <p>{entreprise}</p>
         </div>
-        <p>{entreprise}</p>
+        <div className={styles.link}>
         <Link id="cursor" href={github} target="_blank">
           <Icon icon="github" />
         </Link>
@@ -55,6 +56,7 @@ const DisplayProjectDetail = ({ project }) => {
         >
           visiter le site
         </Link>
+        </div>
         <div className={styles.imgContainer}>
           <div id="cursor" className={styles.logo}>
             {technoIcons}

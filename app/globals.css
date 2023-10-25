@@ -28,3 +28,8 @@ body {
 .hoverHead {
   transform: scale(8);
 }
+@media screen and (min-width:320px) and (max-width:1025px) {
+ .cursor {
+  display: none;
+ }
+}

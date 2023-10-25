@@ -57,3 +57,17 @@
     transform: scale(1.2);
     transition: 0.3s;
 }
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+    .formProjectsContainer h1 {
+        font-size: 1.5rem;
+    }
+    .formProjects {
+        width: 90%;
+    }
+    .formProjects label {
+        font-size: 1rem;
+    }
+    .formProjects input {
+        width: 200px;
+    }
+}

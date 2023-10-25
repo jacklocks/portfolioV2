@@ -14,16 +14,12 @@
   text-decoration: none;
   color: var(--primary);
 }
-.cursor {
-  width: 20px;
-  height: 20px;
-  background: var(--secondary);
-  position: fixed;
-  border-radius: 50%;
-  pointer-events: none;
-  mix-blend-mode: difference;
-  transition: 0.3s;
-}
-.nav a:hover ~ .cursor {
-  transform: scale(8);
+@media screen and (min-width:320px) and (max-width:1024px) {
+  .nav {
+    height: 100px;
+    margin-top: 40px;
+  }
+  .link {
+    font-size: 1rem;
+  }
 }
