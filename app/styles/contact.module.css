@@ -37,13 +37,21 @@
   width: 50%;
   border: 2px solid var(--primary);
   padding: 50px;
+  position: relative;
+}
+.contactInput label {
+  color: var(--primary);
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 .contactInput input {
   width: 60%;
   height: 35px;
   margin-bottom: 30px;
   outline-color: var(--secondary);
-  text-align: center;
 }
 .contactInput textarea {
   width: 60%;
@@ -67,6 +75,26 @@
   transform: scale(1.2);
   transition: 0.3s;
 }
+.rgpdContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 100%;
+}
+.rgpdContainer .rgpd {
+  width: 20px;
+  transform: translateY(100%);
+  padding: 5px;
+}
+.rgpdContainer .rgpdText {
+  width: auto;
+  padding: 0;
+  margin-left: 10px;
+  font-size: 0.9rem;
+}
+.rgpdContainer a {
+  color: var(--secondary);
+}
 
 @media screen and (min-width: 320px) and (max-width: 599px) {
   .contactContainer {
@@ -86,6 +114,9 @@
     width: 90%;
     padding: 10px;
   }
+  .contactInput label {
+    font-size: 0.9rem;
+  }
   .contactInput input {
     width: 100%;
   }
@@ -96,6 +127,9 @@
     width: 80px;
     height: 30px;
     font-size: 0.9rem;
+  }
+  .rgpdContainer .rgpd {
+    transform: translateY(100%);
   }
 }
 @media screen and (min-width: 600px) and (max-width: 1024px) {
@@ -116,6 +150,9 @@
     width: 90%;
     padding: 10px;
   }
+  .contactInput label {
+    font-size: 0.9rem;
+  }
   .contactInput input {
     width: 100%;
   }
@@ -126,5 +163,8 @@
     width: 80px;
     height: 30px;
     font-size: 0.9rem;
+  }
+  .rgpdContainer .rgpd {
+    transform: translateY(100%);
   }
 }
