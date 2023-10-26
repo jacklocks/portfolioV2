@@ -6,7 +6,7 @@ import Link from "next/link";
 const Navigation = () => {
   return (
     <>
-      <ul className={styles.nav}>
+      <div className={styles.nav}>
         <Link className={styles.link} href="/#about">
           <li id="cursor">à propos</li>
         </Link>
@@ -16,7 +16,7 @@ const Navigation = () => {
         <Link className={styles.link} href="/#contact">
           <li id="cursor">contact</li>
         </Link>
-      </ul>
+      </div>
     </>
   );
 };
