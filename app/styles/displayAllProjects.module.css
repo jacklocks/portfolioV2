@@ -58,7 +58,7 @@
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .displayTitleContainer h1 {
-   font-size: 1px;
+    font-size: 1px;
   }
   .overlay {
     transform: none;
@@ -73,22 +73,28 @@
     font-size: 1rem;
     padding: 10px;
   }
+  .projectContainer:hover .overlay {
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .displayTitleContainer h1 {
     font-size: 1px;
-   }
-   .overlay {
-     transform: none;
-     transition: none;
-     opacity: 1;
-   }
-   .projectTitle {
-     font-size: 2.5rem;
-     padding: 10px;
-   }
-   .projectShortDescription {
-     font-size: 1.5rem;
-     padding: 10px;
-   }
+  }
+  .overlay {
+    transform: none;
+    transition: none;
+    opacity: 1;
+  }
+  .projectTitle {
+    font-size: 2.5rem;
+    padding: 10px;
+  }
+  .projectShortDescription {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+  .projectContainer:hover .overlay {
+    display: none;
+  }
 }
