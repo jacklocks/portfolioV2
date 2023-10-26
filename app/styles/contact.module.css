@@ -1,8 +1,7 @@
 .contactContainer {
-  height: 100vh;
-  margin-bottom: 20px;
+  height: auto;
+  width: 100%;
 }
-
 .contactContainer h2 {
   color: var(--primary);
   font-size: 1.5rem;
@@ -16,23 +15,59 @@
 .contactContent {
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  height: auto;
 }
-.contactContainer p {
+.contactContent p {
   color: var(--primary);
-  font-size: 1.6rem;
-  font-weight: 700;
+  width: 70%;
   text-align: center;
-  padding: 0 20px 0 20px;
+  font-size: 1.4rem;
+  font-weight: 800;
+  line-height: 35px;
+  letter-spacing: 2px;
+  padding: 50px;
+}
+.contactInput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   width: 50%;
-  line-height: 50px;
   border: 2px solid var(--primary);
-  padding: 20px;
+  padding: 50px;
 }
-.contactContainer p a {
-  color: var(--secondary);
+.contactInput input {
+  width: 60%;
+  height: 35px;
+  margin-bottom: 30px;
+  outline-color: var(--secondary);
+  text-align: center;
 }
+.contactInput textarea {
+  width: 60%;
+  height: 120px;
+  margin-bottom: 30px;
+  outline-color: var(--secondary);
+  resize: none;
+}
+.contactInput button {
+  background: var(--secondary);
+  width: 90px;
+  height: 40px;
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.contactInput button:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
 @media screen and (min-width: 320px) and (max-width: 599px) {
   .contactContainer {
     height: auto;
@@ -41,10 +76,26 @@
   .contactContainer h2 {
     font-size: 1rem;
   }
-  .contactContainer p {
+  .contactContent p {
+    width: 100%;
+    font-size: 0.9rem;
+    line-height: 20px;
+    padding: 20px;
+  }
+  .contactInput {
     width: 90%;
-    font-size: 1rem;
-    line-height: 30px;
+    padding: 10px;
+  }
+  .contactInput input {
+    width: 100%;
+  }
+  .contactInput textarea {
+    width: 100%;
+  }
+  .contactInput button {
+    width: 80px;
+    height: 30px;
+    font-size: 0.9rem;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 1024px) {
@@ -52,7 +103,28 @@
     height: auto;
     margin-bottom: 100px;
   }
-  .contactContainer p {
+  .contactContainer h2 {
+    font-size: 1.5rem;
+  }
+  .contactContent p {
+    width: 100%;
+    font-size: 1.2rem;
+    line-height: 20px;
+    padding: 20px;
+  }
+  .contactInput {
     width: 90%;
+    padding: 10px;
+  }
+  .contactInput input {
+    width: 100%;
+  }
+  .contactInput textarea {
+    width: 100%;
+  }
+  .contactInput button {
+    width: 80px;
+    height: 30px;
+    font-size: 0.9rem;
   }
 }
