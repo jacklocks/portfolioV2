@@ -7,13 +7,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background: url("./assets/img/backport.webp") no-repeat center/cover fixed;
 }
 
 body {
   font-family: var(--raleway), sans-serif;
   background: url("./assets/img/backport.webp") no-repeat center/cover fixed;
-  height: auto;
 }
 .cursor {
   width: 20px;
