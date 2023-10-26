@@ -4,9 +4,15 @@
   border-radius: 300px;
   margin: 20px;
 }
-@media screen and (min-width:320px) and (max-width:1024px) {
+@media screen and (min-width:320px) and (max-width:599px) {
   .logo {
     height: 60px;
     width: 60px;
+  }
+}
+@media screen and (min-width:600px) and (max-width:1024px) {
+  .logo {
+    height: 90px;
+    width: 90px;
   }
 }

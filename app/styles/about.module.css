@@ -1,5 +1,5 @@
 .aboutContainer {
-  height: 100vh;
+  height: auto;
   margin-bottom: 20px;
 }
 .aboutContainer h2 {
@@ -32,23 +32,37 @@
   height: 200px;
   align-items: center;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 599px) {
   .aboutContainer {
-    height: 120vh;
+    height: auto;
   }
   .aboutContainer h2 {
     font-size: 1rem;
   }
   .aboutContainer p {
     font-size: 2rem;
-    margin-bottom: 20px;
   }
   .aboutContainer ul {
     font-size: 30px;
-    height: 200px;
+    height: 60px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .aboutContainer {
+    height: auto;
+  }
+  .aboutContainer h2 {
+    font-size: 1.5rem;
+  }
+  .aboutContainer p {
+    font-size: 3.5rem;
+  }
+  .aboutContainer ul {
+    font-size: 40px;
+    height: 70px;
+  }
+}
+/* @media screen and (min-width: 768px) and (max-width: 1024px) {
   .aboutContainer {
     height: 130vh;
   }
@@ -60,7 +74,7 @@
     font-size: 40px;
     height: 100px;
   }
-}
+} */
 @media screen and (min-width: 1024px) and (max-height: 800px) {
   .aboutContainer p {
     font-size: 4rem;

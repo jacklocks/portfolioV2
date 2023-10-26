@@ -1,5 +1,5 @@
 .displayProjectDetailContainer {
-  height: 150vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,7 +35,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 600px;
+  height: auto;
   font-weight: 600;
   line-height: 40px;
 }
@@ -69,18 +69,13 @@
   flex: 1 1 90px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 374px) {
-  .displayProjectDetailContainer {
-    height: 350vh;
-  }
+@media screen and (min-width: 320px) and (max-width: 599px) {
   .linkSiteWeb {
     font-size: 0.8rem;
   }
   .title h1 {
     font-size: 1rem;
-  }
-  .title p {
-    margin-bottom: 350px;
+    margin-top: 10px;
   }
   .displayProjectDetailContainer .title p {
     font-size: 0.5rem;
@@ -88,187 +83,59 @@
   .descriptionContainer {
     font-size: 0.8rem;
     line-height: 20px;
-    min-height: 800px;
-    margin-bottom: 250px;
+    height: auto;
   }
   .link {
+    height: auto;
+  }
+  .imgContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  .imgContainer img {
+    width: 225px;
+  }
+  .logo {
+    width: 150px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .linkSiteWeb {
+    font-size: 1rem;
+  }
+  .title h1 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  .displayProjectDetailContainer .title p {
+    font-size: 1rem;
+  }
+  .descriptionContainer {
+    font-size: 1rem;
+    line-height: 30px;
+    height: auto;
+  }
+  .link {
+    height: auto;
+  }
+  .imgContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     height: 300px;
-  }
-  .imgContainer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 200px;
+    margin-bottom: 20px;
   }
   .imgContainer img {
+    width: 450px;
+  }
+  .logo {
     width: 200px;
-  }
-  .logo {
-    width: 150px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-  }
-}
-@media screen and (min-width: 375px) and (max-width: 480px) {
-  .displayProjectDetailContainer {
-    height: 250vh;
-  }
-  .linkSiteWeb {
-    font-size: 0.8rem;
-  }
-  .title h1 {
-    font-size: 1rem;
-  }
-  .title p {
-    margin-bottom: 150px;
-  }
-  .displayProjectDetailContainer .title p {
-    font-size: 0.5rem;
-  }
-  .descriptionContainer {
-    font-size: 0.8rem;
-    line-height: 20px;
-    min-height: 800px;
-    margin-bottom: 100px;
-  }
-  .link {
-    height: 300px;
-  }
-  .imgContainer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 200px;
-  }
-  .imgContainer img {
-    width: 200px;
-  }
-  .logo {
-    width: 150px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-  }
-}
-@media screen and (min-width: 568px) and (max-height: 481px) {
-  .displayProjectDetailContainer {
-    min-height: 380vh;
-    margin-top: 100px;
-  }
-  .descriptionContainer {
-    font-size: 0.8rem;
-    line-height: 20px;
-  }
-  .title h1 {
-    margin-top: 20px;
-  }
-  .imgContainer img {
-    margin-bottom: 20px;
-    width: 500px;
-  }
-}
-@media screen and (min-width: 800px) and (max-height: 800px) {
-  .displayProjectDetailContainer {
-    min-height: 320vh;
-  }
-  .descriptionContainer {
-    font-size: 0.8rem;
-    line-height: 20px;
-  }
-  .title h1 {
-    margin-top: 20px;
-  }
-  .imgContainer img {
-    margin-bottom: 20px;
-    width: 500px;
-  }
-}
-@media screen and (min-width: 1366px) and (max-height: 1024px) {
-.displayProjectDetailContainer .title {
-  margin: 50px;
-}
-.link {
-  height: 200px;
-}
-}
-@media screen and (min-width: 481px) and (max-width: 767px) {
-  .displayProjectDetailContainer {
-    height: 160vh;
-  }
-  .linkSiteWeb {
-    height: 50px;
-  }
-  .title h1 {
-    font-size: 1rem;
-  }
-  .title p {
-    margin-bottom: 150px;
-  }
-  .displayProjectDetailContainer .title p {
-    font-size: 0.5rem;
-  }
-  .descriptionContainer {
-    font-size: 0.8rem;
-    line-height: 20px;
-    min-height: 600px;
-  }
-  .link {
-    height: 250px;
-  }
-  .imgContainer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 200px;
-  }
-  .imgContainer img {
-    width: 300px;
-  }
-  .logo {
-    width: 150px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .displayProjectDetailContainer {
-    height: 120vh;
-  }
-  .linkSiteWeb {
-    font-size: 0.8rem;
-  }
-  .title h1 {
-    font-size: 1rem;
-    margin-top: 20px;
-  }
-  .title p {
-    margin-bottom: 150px;
-  }
-  .displayProjectDetailContainer .title p {
-    font-size: 0.5rem;
-  }
-  .descriptionContainer {
-    font-size: 0.8rem;
-    line-height: 20px;
-    min-height: 600px;
-  }
-  .link {
-    height: 150px;
-  }
-  .imgContainer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 200px;
-  }
-  .imgContainer img {
-    width: 400px;
-    margin-bottom: 20px;
-  }
-  .logo {
-    width: 150px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
