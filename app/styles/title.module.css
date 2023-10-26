@@ -44,7 +44,6 @@
   .titleContainer {
     margin-top: 10px;
     height: auto;
-    overflow-y: hidden;
   }
   .name {
     font-size: 1.2rem;
@@ -72,7 +71,6 @@
   .titleContainer {
     margin-top: 10px;
     height: auto;
-    overflow-y: hidden;
   }
   .name {
     font-size: 2.5rem;
