@@ -58,7 +58,7 @@ const Contact = () => {
           </button>
           <div className={styles.rgpdContainer}>
             <input
-              className={styles.rgpd}
+              className={styles.checkbox}
               type="checkbox"
               onChange={handleChange}
               id="rgpd"
