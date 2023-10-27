@@ -16,7 +16,7 @@ export const metadata = {
   title: "Porfolio Éric Castets Développeur Web Freelance",
   description:
     "Porfolio Éric Castets Développeur Web Freelance spécialisé en Javascript, HTML, CSS, Sass, React.js, Next.js ",
-  favicon: "/favicon.ico",
+  favicon: "./favicon.ico",
   keywords:
     "développeur web, front-end, freelance, Javascript, HTMl, CSS, Sass, React.js, Next.js",
   author: "Éric Castets",
@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
         <meta property="og:type" content={metadata.ogType} />
         <meta property="og:url" content={metadata.ogUrl} />
         <meta property="og:locale" content={metadata.ogLocale} />
-        <meta property="og:image" content="../opengraph-image.png" />
+        <meta property="og:image" content="./opengraph-image.png" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
