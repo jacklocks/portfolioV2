@@ -29,6 +29,9 @@
   letter-spacing: 2px;
   padding: 50px;
 }
+.contactContent span {
+  color: var(--secondary);
+}
 .contactInput {
   display: flex;
   flex-direction: column;
@@ -91,7 +94,8 @@
   width: auto;
   padding: 0;
   margin-left: 10px;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  text-transform: none;
 }
 .rgpdContainer a {
   color: var(--secondary);

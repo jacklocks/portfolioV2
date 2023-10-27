@@ -37,14 +37,14 @@ const Contact = () => {
       <div className={styles.contactContent}>
         <p id="cursor">
           {" "}
-          Pour toute collaboration ou opportunité professionnelle, n'hésitez pas
-          à me contacter!
+          Pour toute <span>collaboration</span> ou opportunité professionnelle,
+          n'hésitez pas à me <span>contacter </span>!
           <br />
-          Je suis ouvert et enthousiaste à l'idée de discuter de projets
-          innovants et de contribuer à des défis stimulants. J'attends avec
-          impatience d'échanger avec vous et de faire partie d'équipes
-          dynamiques pour créer des solutions web ensemble. Merci de me
-          contacter et à bientôt !
+          Je suis ouvert et <span>enthousiaste</span> à l'idée de discuter de
+          <span> projets innovants</span> et de contribuer à des défis
+          stimulants. J'attends avec impatience d'échanger avec vous et de faire
+          partie d'équipes dynamiques pour créer des <span>solutions web</span>{" "}
+          ensemble. Merci de me contacter et à bientôt !
         </p>
         <form className={styles.contactInput} ref={form} onSubmit={sendEmail}>
           <label htmlFor="name">name</label>
@@ -65,7 +65,8 @@ const Contact = () => {
               name="RGPD"
             />
             <label className={styles.rgpdText} htmlFor="rgpd">
-              Accepter les <Link href="/RGPD">RGPD</Link>
+              J'ai lu et accepte la{" "}
+              <Link href="/RGPD">politique de confidentialité</Link>
             </label>
           </div>
         </form>
